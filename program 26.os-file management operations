@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+                FILE* fp;
+                char ch;
+ fp-fopen(“test.txt”, “r”);
+                do
+{
+ch=getc(fp);
+printf(“%c”,ch);
+}
+while(ch !=EOF);
+fclose(fp);
+printf(“
+”);
+system(“PAUSE”);
+return 0;
+#include<stdio.h>
+int main()
+{
+                FILE* fp;
+                char ch;
+                fp-fopen(“test1.txt”, “r”);
+if (fp == NULL)
+{
+                printf(“Unable to open file
+”);
+                system(“PAUSE”);
+                Return 0;
+}
+                do
+{
+ch=getc(fp);
+printf(“%c”,ch);
+}
+while(ch !=EOF);
+fclose(fp);
+printf(“
+”);
+system(“PAUSE”);
+return 0;
+}
